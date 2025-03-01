@@ -1,0 +1,8 @@
+<div>
+  <h2>Leitura da Bíblia</h2>
+  <ul>
+    <li *ngFor="let book of books">
+      <a [routerLink]="['/bible', book.name]">{{ book.name }}</a>
+    </li>
+  </ul>
+</div>

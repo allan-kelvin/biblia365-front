@@ -1,0 +1,6 @@
+<!-- plano-leitura.component.html -->
+<mat-calendar (selectedChange)="onDateSelected($event)"></mat-calendar>
+<div *ngIf="selectedDate">
+  <h3>Plano de Leitura para o dia {{ selectedDate }}</h3>
+  <!-- Mostrar a lista de capítulos e status -->
+</div>
